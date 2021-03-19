@@ -20,6 +20,8 @@ class DetailViewController: UIViewController {
     var interactor: DetailBusinessLogic?
     var router: (NSObjectProtocol & DetailRoutingLogic & DetailDataPassing)?
     
+    var displayData: Detail.FetchData.ViewModel?
+    
     // MARK: Routing
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,6 +53,9 @@ class DetailViewController: UIViewController {
     }
     
     // MARK: Do something
+    @IBAction func openWebDidTab(_ sender: Any) {
+        router?.openLink(link: displayData?.data.url ?? "")
+    }
     
     func doSomething() {
         let request = Detail.Something.Request()
@@ -83,7 +88,8 @@ extension DetailViewController : DetailDisplayLogic {
     }
     
     func displayFetchData(viewModel: Detail.FetchData.ViewModel) {
-        print(viewModel.data)
+        displayData = viewModel
+        
         let data = viewModel.data
         titleLabel.text = data.title
         imgBook.setImage(url: data.img, defaultImage: "")

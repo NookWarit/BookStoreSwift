@@ -133,7 +133,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HRQ-zs-lJH">
-                                <rect key="frame" x="80" y="168.5" width="254" height="381"/>
+                                <rect key="frame" x="87.5" y="168.5" width="239" height="358.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HRQ-zs-lJH" secondAttribute="height" multiplier="2:3" id="6Yz-dd-43C"/>
                                 </constraints>
@@ -143,7 +143,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9o-OX-Az9">
-                                <rect key="frame" x="16" y="565.5" width="382" height="20.5"/>
+                                <rect key="frame" x="16" y="543" width="382" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -156,6 +156,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="openWebDidTab:" destination="yWd-go-bR4" eventType="touchUpInside" id="QTl-gM-Qqo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NcP-vI-dZ3"/>
@@ -171,11 +174,11 @@
                             <constraint firstItem="0Qr-7R-Hxt" firstAttribute="top" secondItem="6Xx-FU-JLW" secondAttribute="bottom" constant="24" id="XK0-8J-ZWf"/>
                             <constraint firstItem="w9o-OX-Az9" firstAttribute="top" secondItem="HRQ-zs-lJH" secondAttribute="bottom" constant="16" id="Ytw-KC-3O5"/>
                             <constraint firstItem="NcP-vI-dZ3" firstAttribute="trailing" secondItem="6Xx-FU-JLW" secondAttribute="trailing" id="ZYf-F9-4aB"/>
-                            <constraint firstItem="HRQ-zs-lJH" firstAttribute="leading" secondItem="NcP-vI-dZ3" secondAttribute="leading" constant="80" id="eo3-cs-Bfv"/>
-                            <constraint firstItem="NcP-vI-dZ3" firstAttribute="trailing" secondItem="HRQ-zs-lJH" secondAttribute="trailing" constant="80" id="fCS-WF-l5o"/>
                             <constraint firstItem="40e-eI-brh" firstAttribute="trailing" secondItem="nxR-L7-brB" secondAttribute="trailing" id="hpW-SA-B3n"/>
+                            <constraint firstItem="HRQ-zs-lJH" firstAttribute="centerX" secondItem="NcP-vI-dZ3" secondAttribute="centerX" id="nb8-c9-3ss"/>
                             <constraint firstItem="6Xx-FU-JLW" firstAttribute="leading" secondItem="NcP-vI-dZ3" secondAttribute="leading" id="o2A-1F-lUM"/>
                             <constraint firstItem="w9o-OX-Az9" firstAttribute="trailing" secondItem="0Qr-7R-Hxt" secondAttribute="trailing" id="rnx-2h-whJ"/>
+                            <constraint firstItem="HRQ-zs-lJH" firstAttribute="height" secondItem="eFN-yG-r3C" secondAttribute="height" multiplier="0.4" id="scb-7p-FxL"/>
                             <constraint firstItem="40e-eI-brh" firstAttribute="top" secondItem="nxR-L7-brB" secondAttribute="top" id="tOJ-HG-z5w"/>
                             <constraint firstItem="0Qr-7R-Hxt" firstAttribute="leading" secondItem="NcP-vI-dZ3" secondAttribute="leading" constant="16" id="wUj-pA-3hc"/>
                             <constraint firstItem="40e-eI-brh" firstAttribute="bottom" secondItem="nxR-L7-brB" secondAttribute="bottom" id="xdD-F7-vWl"/>
