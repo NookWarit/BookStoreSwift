@@ -121,7 +121,7 @@ extension SearchViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: bookTableViewCell, for: indexPath) as? BookTableViewCell
         if(searchActive){
-            cell?.configureCell(urlImage: filtered[indexPath.row].url, title: filtered[indexPath.row].title, detail: filtered[indexPath.row].detail, byline: filtered[indexPath.row].byline)
+            cell?.configureCell(urlImage: filtered[indexPath.row].img, title: filtered[indexPath.row].title, detail: filtered[indexPath.row].detail, byline: filtered[indexPath.row].byline)
         } else {
         cell?.configureCell(urlImage: displayData[indexPath.row].img, title: displayData[indexPath.row].title, detail: displayData[indexPath.row].detail, byline: displayData[indexPath.row].byline)
         }
@@ -132,6 +132,11 @@ extension SearchViewController: UITableViewDataSource {
 
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        router?.routeToDetail(data: displayData[indexPath.row])
+        if(searchActive){
+            router?.routeToDetail(data: filtered[indexPath.row])
+        } else {
+            router?.routeToDetail(data: displayData[indexPath.row])
+        }
+        
     }
 }
