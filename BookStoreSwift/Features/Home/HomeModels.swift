@@ -26,6 +26,7 @@ enum Home {
                 var title: String
                 var detail: String
                 var byline: String
+                var url: String
             }
             var displayBookData: [DisplayBookData]
         }
