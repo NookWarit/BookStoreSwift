@@ -86,25 +86,41 @@
                                     <constraint firstAttribute="height" constant="64" id="Tis-j5-hAo"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nlm-2a-MZC">
-                                <rect key="frame" x="0.0" y="108" width="414" height="754"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nlm-2a-MZC">
+                                <rect key="frame" x="0.0" y="188" width="414" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gKS-Dw-7GA" id="Loh-dY-vU9"/>
+                                    <outlet property="delegate" destination="gKS-Dw-7GA" id="DSA-i1-9md"/>
+                                </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Serach" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-0m-Sdt">
+                                <rect key="frame" x="5" y="120" width="404" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gKS-Dw-7GA" id="a8O-Gr-Vg4"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SrW-MO-eku"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SrW-MO-eku" firstAttribute="trailing" secondItem="9bb-wR-n9c" secondAttribute="trailing" id="1A8-LZ-bd3"/>
-                            <constraint firstItem="SrW-MO-eku" firstAttribute="bottom" secondItem="nlm-2a-MZC" secondAttribute="bottom" id="2jx-A0-NbG"/>
+                            <constraint firstAttribute="bottom" secondItem="nlm-2a-MZC" secondAttribute="bottom" id="2jx-A0-NbG"/>
                             <constraint firstItem="nlm-2a-MZC" firstAttribute="leading" secondItem="SrW-MO-eku" secondAttribute="leading" id="Cad-GF-D8H"/>
                             <constraint firstItem="9bb-wR-n9c" firstAttribute="top" secondItem="SrW-MO-eku" secondAttribute="top" id="JLU-rv-0Il"/>
                             <constraint firstItem="SrW-MO-eku" firstAttribute="trailing" secondItem="nlm-2a-MZC" secondAttribute="trailing" id="JSd-rg-Oak"/>
+                            <constraint firstItem="nlm-2a-MZC" firstAttribute="top" secondItem="d9k-0m-Sdt" secondAttribute="bottom" constant="12" id="MdU-ST-JRV"/>
                             <constraint firstItem="9bb-wR-n9c" firstAttribute="leading" secondItem="SrW-MO-eku" secondAttribute="leading" id="OXU-mu-KBE"/>
-                            <constraint firstItem="nlm-2a-MZC" firstAttribute="top" secondItem="9bb-wR-n9c" secondAttribute="bottom" id="Pxh-ol-FBd"/>
+                            <constraint firstItem="SrW-MO-eku" firstAttribute="trailing" secondItem="d9k-0m-Sdt" secondAttribute="trailing" constant="5" id="UOv-A0-o3g"/>
+                            <constraint firstItem="d9k-0m-Sdt" firstAttribute="leading" secondItem="SrW-MO-eku" secondAttribute="leading" constant="5" id="WxG-vf-Zhc"/>
+                            <constraint firstItem="d9k-0m-Sdt" firstAttribute="top" secondItem="9bb-wR-n9c" secondAttribute="bottom" constant="12" id="XY0-tK-2aR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="navBar" destination="9bb-wR-n9c" id="r6i-q2-Wjc"/>
+                        <outlet property="search" destination="d9k-0m-Sdt" id="9tn-2H-x8t"/>
+                        <outlet property="tableView" destination="nlm-2a-MZC" id="WZV-lj-ICe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2a-hq-Ktx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -45,12 +45,15 @@
 		695B11582601F40E00B24029 /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11502601F40E00B24029 /* DetailProtocol.swift */; };
 		695B115D2601F48E00B24029 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B115C2601F48E00B24029 /* DataModel.swift */; };
 		695B116C2601F5D900B24029 /* GetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B116B2601F5D900B24029 /* GetAPI.swift */; };
-		695B11792601F7C200B24029 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11782601F7C200B24029 /* Font.swift */; };
+		695B11792601F7C200B24029 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11782601F7C200B24029 /* UIFont.swift */; };
 		695B11C826021CDE00B24029 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11C626021CDE00B24029 /* CollectionViewCell.swift */; };
 		695B11C926021CDE00B24029 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695B11C726021CDE00B24029 /* CollectionViewCell.xib */; };
-		695B11CE26021F8200B24029 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11CD26021F8200B24029 /* Image.swift */; };
+		695B11CE26021F8200B24029 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11CD26021F8200B24029 /* UIImageView.swift */; };
 		695B11D32602262700B24029 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11D22602262700B24029 /* UIViewController.swift */; };
-		695B11E826030C1A00B24029 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11E726030C1900B24029 /* View.swift */; };
+		695B11E826030C1A00B24029 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B11E726030C1900B24029 /* UIView.swift */; };
+		69DB4DE8260461AA00EEBE14 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB4DE6260461AA00EEBE14 /* BookTableViewCell.swift */; };
+		69DB4DE9260461AA00EEBE14 /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69DB4DE7260461AA00EEBE14 /* BookTableViewCell.xib */; };
+		69DB4DEE26046FA200EEBE14 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB4DED26046FA200EEBE14 /* UILabel.swift */; };
 		8A1DA715576D5E35D80592C0 /* Pods_BookStoreSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291BB4C4542D796325174B2D /* Pods_BookStoreSwift.framework */; };
 		AC35F11B9A1DC52FF7A05F3C /* Pods_BookStoreSwift_BookStoreSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBF3F8F0B03CD094D9A0969 /* Pods_BookStoreSwift_BookStoreSwiftUITests.framework */; };
 		F7D06550DA8328299EC554F8 /* Pods_BookStoreSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75847A701F9363EFBC66E3B5 /* Pods_BookStoreSwiftTests.framework */; };
@@ -122,12 +125,15 @@
 		695B11502601F40E00B24029 /* DetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
 		695B115C2601F48E00B24029 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		695B116B2601F5D900B24029 /* GetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAPI.swift; sourceTree = "<group>"; };
-		695B11782601F7C200B24029 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		695B11782601F7C200B24029 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		695B11C626021CDE00B24029 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		695B11C726021CDE00B24029 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		695B11CD26021F8200B24029 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		695B11CD26021F8200B24029 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		695B11D22602262700B24029 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		695B11E726030C1900B24029 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		695B11E726030C1900B24029 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		69DB4DE6260461AA00EEBE14 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		69DB4DE7260461AA00EEBE14 /* BookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookTableViewCell.xib; sourceTree = "<group>"; };
+		69DB4DED26046FA200EEBE14 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		75847A701F9363EFBC66E3B5 /* Pods_BookStoreSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookStoreSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD3ECB3158D3BC26DCFC20E /* Pods-BookStoreSwift-BookStoreSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStoreSwift-BookStoreSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-BookStoreSwift-BookStoreSwiftUITests/Pods-BookStoreSwift-BookStoreSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BF8AC600651B2FB7A9A37DE1 /* Pods-BookStoreSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookStoreSwift.release.xcconfig"; path = "Target Support Files/Pods-BookStoreSwift/Pods-BookStoreSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -237,9 +243,10 @@
 			children = (
 				695B10DB2601CADB00B24029 /* View */,
 				695B11D22602262700B24029 /* UIViewController.swift */,
-				695B11782601F7C200B24029 /* Font.swift */,
-				695B11CD26021F8200B24029 /* Image.swift */,
-				695B11E726030C1900B24029 /* View.swift */,
+				695B11782601F7C200B24029 /* UIFont.swift */,
+				695B11CD26021F8200B24029 /* UIImageView.swift */,
+				695B11E726030C1900B24029 /* UIView.swift */,
+				69DB4DED26046FA200EEBE14 /* UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -312,6 +319,7 @@
 		695B11352601F3C100B24029 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				69DB4DE52604615200EEBE14 /* UI */,
 				695B11362601F3FB00B24029 /* SearchConfiguration.swift */,
 				695B11372601F3FB00B24029 /* SearchPresenter.swift */,
 				695B11382601F3FB00B24029 /* SearchWorker.swift */,
@@ -329,6 +337,15 @@
 			children = (
 				695B11C626021CDE00B24029 /* CollectionViewCell.swift */,
 				695B11C726021CDE00B24029 /* CollectionViewCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		69DB4DE52604615200EEBE14 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				69DB4DE6260461AA00EEBE14 /* BookTableViewCell.swift */,
+				69DB4DE7260461AA00EEBE14 /* BookTableViewCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -468,6 +485,7 @@
 				695B11C926021CDE00B24029 /* CollectionViewCell.xib in Resources */,
 				695B10F62601CF9200B24029 /* Average-Regular.ttf in Resources */,
 				695B109C2601C73B00B24029 /* Assets.xcassets in Resources */,
+				69DB4DE9260461AA00EEBE14 /* BookTableViewCell.xib in Resources */,
 				695B109A2601C73A00B24029 /* Main.storyboard in Resources */,
 				695B10FB2601CFD600B24029 /* Chomsky.otf in Resources */,
 				695B10E02601CB1500B24029 /* HeaderView.xib in Resources */,
@@ -602,15 +620,17 @@
 				695B116C2601F5D900B24029 /* GetAPI.swift in Sources */,
 				695B11512601F40E00B24029 /* DetailConfiguration.swift in Sources */,
 				695B11112601E5B000B24029 /* HomeInteractor.swift in Sources */,
+				69DB4DE8260461AA00EEBE14 /* BookTableViewCell.swift in Sources */,
 				695B11572601F40E00B24029 /* DetailInteractor.swift in Sources */,
 				695B11552601F40E00B24029 /* DetailModels.swift in Sources */,
+				69DB4DEE26046FA200EEBE14 /* UILabel.swift in Sources */,
 				695B11442601F3FB00B24029 /* SearchInteractor.swift in Sources */,
 				695B11422601F3FB00B24029 /* SearchModels.swift in Sources */,
 				695B110F2601E5B000B24029 /* HomeModels.swift in Sources */,
 				695B11582601F40E00B24029 /* DetailProtocol.swift in Sources */,
 				695B110D2601E5B000B24029 /* HomeWorker.swift in Sources */,
 				695B11412601F3FB00B24029 /* SearchRouter.swift in Sources */,
-				695B11E826030C1A00B24029 /* View.swift in Sources */,
+				695B11E826030C1A00B24029 /* UIView.swift in Sources */,
 				695B11122601E5B000B24029 /* HomeProtocol.swift in Sources */,
 				695B11542601F40E00B24029 /* DetailRouter.swift in Sources */,
 				695B115D2601F48E00B24029 /* DataModel.swift in Sources */,
@@ -623,7 +643,7 @@
 				695B11102601E5B000B24029 /* HomeViewController.swift in Sources */,
 				695B110C2601E5B000B24029 /* HomePresenter.swift in Sources */,
 				695B11522601F40E00B24029 /* DetailPresenter.swift in Sources */,
-				695B11792601F7C200B24029 /* Font.swift in Sources */,
+				695B11792601F7C200B24029 /* UIFont.swift in Sources */,
 				695B11432601F3FB00B24029 /* SearchViewController.swift in Sources */,
 				695B11D32602262700B24029 /* UIViewController.swift in Sources */,
 				695B11C826021CDE00B24029 /* CollectionViewCell.swift in Sources */,
@@ -631,7 +651,7 @@
 				695B11402601F3FB00B24029 /* SearchWorker.swift in Sources */,
 				695B10ED2601CE4B00B24029 /* HeaderView.swift in Sources */,
 				695B110B2601E5B000B24029 /* HomeConfiguration.swift in Sources */,
-				695B11CE26021F8200B24029 /* Image.swift in Sources */,
+				695B11CE26021F8200B24029 /* UIImageView.swift in Sources */,
 				695B113E2601F3FB00B24029 /* SearchConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

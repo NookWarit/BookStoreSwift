@@ -1,36 +1,31 @@
-//
-//  SearchProtocol.swift
-//  BookStoreSwift
-//
-//  Created by Foodstory on 17/3/2564 BE.
-//  Copyright (c) 2564 BE ___ORGANIZATIONNAME___. All rights reserved.
-//
-
 import Foundation
 
 //MARK: ViewController
 protocol SearchDisplayLogic: class {
     func displaySomething(viewModel: Search.Something.ViewModel)
+    func displayFetchData(viewModel: Search.FetchData.ViewModel)
 }
 
 //MARK: Interactor
 protocol SearchBusinessLogic {
     func doSomething(request: Search.Something.Request)
+    func fetchData()
 }
 
 //MARK: Presenter
 protocol SearchPresentationLogic {
     func presentSomething(response: Search.Something.Response)
+    func presentFetchData(response: Search.FetchData.Response)
 }
 
 //MARK: Routable
-@objc protocol SearchRoutingLogic {
-
+protocol SearchRoutingLogic {
+    func routeToDetail(data: Home.FetchData.ViewModel.DisplayBookData)
 }
 
 //MARK: DataStore
 protocol SearchDataStore {
-
+    var request: Search.FetchData.Request? { get set }
 }
 
 //MARK: DataPassing

@@ -24,8 +24,8 @@ extension HomePresenter: HomePresentationLogic {
                     let temp = Home.FetchData.ViewModel.DisplayBookData(img: multi.url,
                                                                         title: data.title,
                                                                         detail: data.abstract,
-                                                                        byline: data.byline, url: data.url)
-                    
+                                                                        byline: data.byline,
+                                                                        url: data.url)
                     displayData.append(temp)
                 }
             }
