@@ -1,11 +1,3 @@
-//
-//  SearchModels.swift
-//  BookStoreSwift
-//
-//  Created by Foodstory on 17/3/2564 BE.
-//  Copyright (c) 2564 BE ___ORGANIZATIONNAME___. All rights reserved.
-//
-
 import UIKit
 
 enum Search {
@@ -23,19 +15,13 @@ enum Search {
     
     enum FetchData {
         struct Request{
-
+            var data: [Home.FetchData.ViewModel.DisplayBookData]
         }
         struct Response{
-            var data: [DataModel]
+            var data: [Home.FetchData.ViewModel.DisplayBookData]
         }
         struct ViewModel{
-            struct DisplayBookData {
-                var img: String
-                var title: String
-                var detail: String
-                var byline: String
-            }
-            var displayBookData: [DisplayBookData]
+            var data: [Home.FetchData.ViewModel.DisplayBookData]
         }
     }
 }

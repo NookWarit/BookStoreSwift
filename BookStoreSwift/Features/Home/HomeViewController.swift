@@ -1,17 +1,10 @@
-//
-//  HomeViewController.swift
-//  BookStoreSwift
-//
-//  Created by Foodstory on 17/3/2564 BE.
-//  Copyright (c) 2564 BE ___ORGANIZATIONNAME___. All rights reserved.
-//
-
 import UIKit
 
 class HomeViewController: UIViewController {
     // MARK: @IBOutlet
     @IBOutlet weak var navBar: HeaderView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     
     var interactor: HomeBusinessLogic?
     var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
@@ -57,6 +50,7 @@ class HomeViewController: UIViewController {
     
     func fetchData() {
         interactor?.fetchData()
+        activity.startAnimating()
     }
 }
 
@@ -83,6 +77,7 @@ extension HomeViewController : HomeDisplayLogic {
     func displayFetchDataSuccess(viewModel: Home.FetchData.ViewModel) {
         displayData = viewModel.displayBookData
         collectionView.reloadData()
+        activity.stopAnimating()
     }
 }
 
@@ -108,12 +103,12 @@ extension HomeViewController: UICollectionViewDelegate {
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (collectionView.frame.width/2)-5, height: collectionView.frame.height/3)
+        return CGSize(width: (collectionView.frame.width/2)-5, height: collectionView.frame.height/2.5)
     }
 }
 
 extension HomeViewController: HeaderViewDelegate {
     func searchDidTap() {
-        router?.routeToSearch()
+        router?.routeToSearch(data: displayData)
     }
 }

@@ -25,8 +25,18 @@ extension UIFont {
         return UIFont(name: average, size: size)!
     }
     
+    class func textAverage12() -> UIFont {
+        let size: CGFloat = 12
+        return UIFont(name: average, size: size)!
+    }
+    
     class func textAverage10() -> UIFont {
         let size: CGFloat = 10
+        return UIFont(name: average, size: size)!
+    }
+    
+    class func textAverage8() -> UIFont {
+        let size: CGFloat = 8
         return UIFont(name: average, size: size)!
     }
 }

@@ -1,11 +1,3 @@
-//
-//  SearchPresenter.swift
-//  BookStoreSwift
-//
-//  Created by Foodstory on 17/3/2564 BE.
-//  Copyright (c) 2564 BE ___ORGANIZATIONNAME___. All rights reserved.
-//
-
 import UIKit
 
 class SearchPresenter {
@@ -21,5 +13,10 @@ extension SearchPresenter: SearchPresentationLogic {
     func presentSomething(response: Search.Something.Response) {
         let viewModel = Search.Something.ViewModel()
         viewController?.displaySomething(viewModel: viewModel)
+    }
+    
+    func presentFetchData(response: Search.FetchData.Response) {
+        let viewModel = Search.FetchData.ViewModel(data: response.data)
+        viewController?.displayFetchData(viewModel: viewModel)
     }
 }
