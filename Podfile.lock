@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (5.4.1)
-  - NVActivityIndicatorView (5.1.1):
-    - NVActivityIndicatorView/Base (= 5.1.1)
-  - NVActivityIndicatorView/Base (5.1.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
   - SDWebImage (5.10.4):
     - SDWebImage/Core (= 5.10.4)
   - SDWebImage/Core (5.10.4)
@@ -10,7 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - NVActivityIndicatorView
+  - NVActivityIndicatorView (~> 4.8.0)
   - SDWebImage (~> 5.0)
   - SwiftyJSON
 
@@ -23,10 +23,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: c0e9be8365b83ca52ab532e445f52010efda7732
+PODFILE CHECKSUM: 9476a08921e696af7e32cdbe4113208a833327a7
 
 COCOAPODS: 1.10.1

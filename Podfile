@@ -6,7 +6,7 @@ target 'BookStoreSwift' do
   use_frameworks!
 
   # Pods for BookStoreSwift
-  pod 'NVActivityIndicatorView'
+  pod 'NVActivityIndicatorView' , '~> 4.8.0'
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SDWebImage', '~> 5.0'

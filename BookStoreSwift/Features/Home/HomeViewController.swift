@@ -4,7 +4,6 @@ class HomeViewController: UIViewController {
     // MARK: @IBOutlet
     @IBOutlet weak var navBar: HeaderView!
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var activity: UIActivityIndicatorView!
     
     var interactor: HomeBusinessLogic?
     var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
@@ -50,7 +49,8 @@ class HomeViewController: UIViewController {
     
     func fetchData() {
         interactor?.fetchData()
-        activity.startAnimating()
+        showProgress()
+        
     }
 }
 
@@ -77,7 +77,7 @@ extension HomeViewController : HomeDisplayLogic {
     func displayFetchDataSuccess(viewModel: Home.FetchData.ViewModel) {
         displayData = viewModel.displayBookData
         collectionView.reloadData()
-        activity.stopAnimating()
+        hideProgress()
     }
 }
 
