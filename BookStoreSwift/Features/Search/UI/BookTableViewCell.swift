@@ -11,7 +11,7 @@ class BookTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        cardView.dropShadowView(color: .black, opacity: 0.2, offSet: CGSize.zero, radius: 8, scale: false)
+        cardView.dropShadowView(color: .black, opacity: 0.2, offSet: CGSize(width: 3, height: 3), radius: 8, scale: false)
         cardView.layer.cornerRadius = 8
     }
     

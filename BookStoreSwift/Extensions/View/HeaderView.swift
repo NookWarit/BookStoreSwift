@@ -34,18 +34,11 @@ class HeaderView: UIView {
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        contentView.layer.masksToBounds = false
-        contentView.layer.shadowColor = UIColor.darkGray.cgColor
-        contentView.layer.shadowOpacity = 0.1
-        contentView.layer.shadowOffset = CGSize.zero
-        contentView.layer.shadowRadius = 5
+        contentView.layer.masksToBounds = true
+        contentView.dropShadowView(color: .darkGray, opacity: 1, offSet: CGSize(width: 3, height: 3), radius: 5, scale: false)
+        contentView.roundCorners(corners: [.bottomRight, .bottomLeft ], radius: 8)
         
-        contentView.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-        contentView.layer.shouldRasterize = true
-        contentView.layer.rasterizationScale = UIScreen.main.scale
-        
-        self.titleLabel.text = "The New York Time"
-        self.titleLabel.font = .textChomsky18()
+        self.titleLabel.setLabelWith(text: "The New York Time", color: .black, font: .textChomsky18())
     }
     
     func configureView(backHide: Bool, seachHide: Bool, navigationController: UINavigationController?) {

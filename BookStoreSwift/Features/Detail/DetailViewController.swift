@@ -66,7 +66,7 @@ extension DetailViewController {
         openWebBtn.titleLabel?.font = .textAverage16()
         openWebBtn.setTitleShadowColor(.black, for: .normal)
         viewButton.layer.cornerRadius = 8
-        viewButton.dropShadowView(color: .black, opacity: 0.1, offSet: CGSize.zero, radius: 8, scale: false)
+        viewButton.dropShadowView(color: .black, opacity: 0.1, offSet: CGSize(width: 3, height: 3), radius: 8, scale: false)
     }
     
     private func configure() {

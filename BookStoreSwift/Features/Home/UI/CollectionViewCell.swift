@@ -18,7 +18,7 @@ class CollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        cardView.dropShadowView(color: .black, opacity: 0.1, offSet: CGSize.zero, radius: 10, scale: false)
+        cardView.dropShadowView(color: .black, opacity: 0.1, offSet: CGSize(width: 3, height: 3), radius: 10, scale: false)
         cardView.layer.cornerRadius = 8
         cardView.layoutIfNeeded()
         
