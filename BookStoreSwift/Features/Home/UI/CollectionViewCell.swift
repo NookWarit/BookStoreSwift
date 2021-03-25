@@ -31,10 +31,7 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     func configureCell(title: String, imageUrl: String) {
-        titleLabel.text = title
-        titleLabel.font = .textAverage10()
-        titleLabel.textColor = UIColor.white
-        
+        titleLabel.setLabelWith(text: title, color: .white, font: .textAverage10())
         img.setImage(url: imageUrl, defaultImage: "")
     }
 

@@ -5,6 +5,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var navBar: HeaderView!
     @IBOutlet weak var search: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     
     var interactor: SearchBusinessLogic?
     var router: (NSObjectProtocol & SearchRoutingLogic & SearchDataPassing)?
@@ -41,6 +42,7 @@ class SearchViewController: UIViewController {
         doSomething()
         setup()
         interactor?.fetchData()
+        activity.startAnimating()
     }
     
     // MARK: Do something
@@ -73,6 +75,7 @@ extension SearchViewController : SearchDisplayLogic {
     func displayFetchData(viewModel: Search.FetchData.ViewModel) {
         displayData = viewModel.data
         tableView.reloadData()
+        activity.stopAnimating()
     }
 }
 
@@ -104,6 +107,7 @@ extension SearchViewController: UISearchBarDelegate {
                 searchActive = false;
             } else {
                 searchActive = true;
+                
             }
             self.tableView.reloadData()
         }
@@ -125,6 +129,7 @@ extension SearchViewController: UITableViewDataSource {
         } else {
         cell?.configureCell(urlImage: displayData[indexPath.row].img, title: displayData[indexPath.row].title, detail: displayData[indexPath.row].detail, byline: displayData[indexPath.row].byline)
         }
+        activity.stopAnimating()
         return cell ?? UITableViewCell()
     }
     

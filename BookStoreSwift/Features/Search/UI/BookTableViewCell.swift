@@ -17,8 +17,8 @@ class BookTableViewCell: UITableViewCell {
     
     func configureCell(urlImage: String, title: String, detail: String, byline: String) {
         img.setImage(url: urlImage, defaultImage: "")
-        titleLable.setLabelWith(text: title, color: .black, font: .textAverage12())
-        detailLabel.setLabelWith(text: detail, color: UIColor(red: 0.502, green: 0.502, blue: 0.502, alpha: 1), font: .textAverage8())
+        titleLable.setLabelWith(text: title, color: .black, font: .textAverage14())
+        detailLabel.setLabelWith(text: detail, color: UIColor(red: 0.502, green: 0.502, blue: 0.502, alpha: 1), font: .textAverage10())
         bylineLabel.setLabelWith(text: byline, color: UIColor(red: 0.502, green: 0.502, blue: 0.502, alpha: 1), font: .textAverage8())
     }
     
