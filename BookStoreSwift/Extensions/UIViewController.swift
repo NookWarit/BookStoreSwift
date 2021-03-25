@@ -2,14 +2,18 @@ import UIKit
 import NVActivityIndicatorView
 
 // MARK: - Showprogress
-//extension UIViewController, NVActivityIndicatorViewable {
-//    func show() {
+extension UIViewController {
+    func show() {
 //        let nv = NVActivityIndicatorView.init(frame: CGRect(x: 0, y: 0, width: 42, height: 42),
 //                                     type: NVActivityIndicatorType.ballBeat,
 //                                     color: UIColor.blue)
-//        nv.startAnimating()
-//    }
-//}
+        let nv = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 100, height: 100),
+                                         type: NVActivityIndicatorType.ballBeat,
+                                         color: UIColor.green, padding: 10)
+        nv.startAnimating()
+        
+    }
+}
 //extension UIViewController: NVActivityIndicatorViewable {
 //    func showProgress() {
 //        let size = CGSize(width: 42, height: 42)

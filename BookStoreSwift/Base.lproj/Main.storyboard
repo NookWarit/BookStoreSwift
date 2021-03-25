@@ -47,6 +47,11 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="uAH-e0-8Aq"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" id="67V-8a-lOe">
+                                <rect key="frame" x="197" y="438" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -63,6 +68,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="yze-L0-HeL"/>
                     <connections>
+                        <outlet property="activity" destination="67V-8a-lOe" id="l26-BI-Cpc"/>
                         <outlet property="collectionView" destination="z2j-8s-wT7" id="qu5-iF-diM"/>
                         <outlet property="navBar" destination="CQ0-1x-Wma" id="cOH-CZ-hky"/>
                     </connections>
@@ -94,13 +100,24 @@
                                     <outlet property="delegate" destination="gKS-Dw-7GA" id="DSA-i1-9md"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Serach" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-0m-Sdt">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Serach" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-0m-Sdt">
                                 <rect key="frame" x="5" y="120" width="404" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                                 <connections>
                                     <outlet property="delegate" destination="gKS-Dw-7GA" id="a8O-Gr-Vg4"/>
                                 </connections>
                             </searchBar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="FeP-XA-Yrq">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SrW-MO-eku"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,6 +135,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activity" destination="FeP-XA-Yrq" id="Cd2-Ti-99j"/>
                         <outlet property="navBar" destination="9bb-wR-n9c" id="r6i-q2-Wjc"/>
                         <outlet property="search" destination="d9k-0m-Sdt" id="9tn-2H-x8t"/>
                         <outlet property="tableView" destination="nlm-2a-MZC" id="WZV-lj-ICe"/>
