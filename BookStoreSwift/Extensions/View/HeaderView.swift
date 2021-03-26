@@ -10,6 +10,7 @@ class HeaderView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var searchBtn: UIButton!
+    @IBOutlet weak var cardView: UIView!
     
     // MARK: - Varible
     weak var delegate: HeaderViewDelegate?
@@ -34,9 +35,9 @@ class HeaderView: UIView {
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        contentView.layer.masksToBounds = true
-        contentView.dropShadowView(color: .darkGray, opacity: 1, offSet: CGSize(width: 3, height: 3), radius: 5, scale: false)
-        contentView.roundCorners(corners: [.bottomRight, .bottomLeft ], radius: 8)
+        cardView.layer.masksToBounds = true
+        cardView.dropShadowView(color: .darkGray, opacity: 0.5, offSet: CGSize(width: 5, height: 3), radius: 5, scale: false)
+        cardView.roundCorners(corners: [.bottomRight, .bottomLeft ], radius: 8)
         
         self.titleLabel.setLabelWith(text: "The New York Time", color: .black, font: .textChomsky18())
     }

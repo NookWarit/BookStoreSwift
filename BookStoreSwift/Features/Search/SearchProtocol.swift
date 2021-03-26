@@ -10,6 +10,7 @@ protocol SearchDisplayLogic: class {
 protocol SearchBusinessLogic {
     func doSomething(request: Search.Something.Request)
     func fetchData()
+    func searchData(request: Search.SearchData.Request)
 }
 
 //MARK: Presenter

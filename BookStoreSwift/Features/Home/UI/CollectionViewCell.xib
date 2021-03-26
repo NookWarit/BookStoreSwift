@@ -17,13 +17,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="224" height="369"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvJ-uL-wbH">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvJ-uL-wbH">
                         <rect key="frame" x="15" y="59" width="194" height="295"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v1S-WA-exr">
                                 <rect key="frame" x="0.0" y="0.0" width="194" height="295"/>
                             </imageView>
-                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-lM-Hma">
+                            <view clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-lM-Hma">
                                 <rect key="frame" x="0.0" y="255" width="194" height="40"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>

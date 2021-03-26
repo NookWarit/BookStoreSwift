@@ -16,21 +16,21 @@ extension HomePresenter: HomePresentationLogic {
     }
     
     func presentFetchData(response: Home.FetchData.Response) {
-        var displayData = [Home.FetchData.ViewModel.DisplayBookData]()
-        for data in response.data {
-            
-            for multi in data.multimedia{
-                if multi.format == "superJumbo" {
-                    let temp = Home.FetchData.ViewModel.DisplayBookData(img: multi.url,
-                                                                        title: data.title,
-                                                                        detail: data.abstract,
-                                                                        byline: data.byline,
-                                                                        url: data.url)
-                    displayData.append(temp)
-                }
+        let res  = response.data.compactMap {(data) -> Home.FetchData.ViewModel.DisplayBookData? in
+
+            let dataImg = data.multimedia.filter { (MultimediaDataModel) -> Bool in
+                return MultimediaDataModel.format == "superJumbo"
             }
+            
+            return Home.FetchData.ViewModel.DisplayBookData(
+                img: dataImg.first?.url ?? " ",
+                title: data.title,
+                detail: data.abstract,
+                byline: data.byline,
+                url: data.url
+            )
         }
-        let viewModel = Home.FetchData.ViewModel(displayBookData: displayData)
+        let viewModel = Home.FetchData.ViewModel(displayBookData: res)
         viewController?.displayFetchDataSuccess(viewModel: viewModel)
     }
 }

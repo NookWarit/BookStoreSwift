@@ -32,4 +32,14 @@ extension SearchInteractor: SearchDataStore, SearchBusinessLogic {
         let response = Search.FetchData.Response(data: req!.data)
         presenter?.presentFetchData(response: response)
     }
+    
+    func searchData(request: Search.SearchData.Request) {
+        let response = Search.FetchData.Response(data: req!.data)
+        let data = response.data.filter { (data) -> Bool in
+            return data.title.contains(request.data)
+        }
+        let res = Search.FetchData.Response(data: data)
+        presenter?.presentFetchData(response: res)
+        
+    }
 }

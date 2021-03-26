@@ -4,14 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="BookStoreSwift" customModuleProvider="target">
             <connections>
                 <outlet property="backBtn" destination="I8F-gV-UAg" id="p0x-sb-VUs"/>
-                <outlet property="contentView" destination="iN0-l3-epB" id="2eV-Kb-hck"/>
+                <outlet property="cardView" destination="jCn-Zz-ZYp" id="aYl-AT-dwR"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="N6C-9m-5Qx"/>
                 <outlet property="searchBtn" destination="Y1C-5Y-ZyV" id="s6E-Se-nZI"/>
                 <outlet property="titleLabel" destination="LWd-Fo-551" id="cxk-pL-h3J"/>
             </connections>
@@ -51,6 +51,7 @@
                             </connections>
                         </button>
                     </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="Y1C-5Y-ZyV" firstAttribute="centerY" secondItem="I8F-gV-UAg" secondAttribute="centerY" id="4jc-fD-5cj"/>
                         <constraint firstItem="I8F-gV-UAg" firstAttribute="leading" secondItem="jCn-Zz-ZYp" secondAttribute="leading" constant="20" id="89d-6S-Y8l"/>
@@ -62,7 +63,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jCn-Zz-ZYp" secondAttribute="bottom" id="CSn-Pz-7ia"/>
                 <constraint firstItem="jCn-Zz-ZYp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="T0j-Ec-m0f"/>
@@ -76,8 +77,5 @@
     <resources>
         <image name="back" width="16" height="16"/>
         <image name="search" width="24" height="24"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

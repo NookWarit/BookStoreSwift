@@ -59,9 +59,7 @@ class DetailViewController: UIViewController {
 extension DetailViewController {
     private func setup() {
         navBar.configureView(backHide: false, seachHide: true, navigationController: navigationController)
-        titleLabel.font = .textAverage18()
-        detailLabel.font = .textAverage14()
-        detailLabel.textColor = UIColor.systemGray
+
         openWebBtn.setTitle("Open Website", for: .normal)
         openWebBtn.titleLabel?.font = .textAverage16()
         openWebBtn.setTitleShadowColor(.black, for: .normal)
@@ -83,9 +81,8 @@ extension DetailViewController : DetailDisplayLogic {
         displayData = viewModel
         
         let data = viewModel.data
-        titleLabel.text = data.title
+        titleLabel.setLabelWith(text: data.title, color: .black, font: .textAverage18())
+        detailLabel.setLabelWith(text: data.detail, color: UIColor.systemGray, font: .textAverage14())
         imgBook.setImage(url: data.img, defaultImage: "")
-        detailLabel.text = data.detail
-        
     }
 }

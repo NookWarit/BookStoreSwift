@@ -22,11 +22,9 @@ class CollectionViewCell: UICollectionViewCell {
         cardView.layer.cornerRadius = 8
         cardView.layoutIfNeeded()
         
-        bgView.layer.masksToBounds = true
         bgView.roundCorners(corners: [.bottomRight, .bottomLeft ], radius: 8)
         
         img.layer.cornerRadius = 8
-        img.clipsToBounds = true
         img.layoutIfNeeded()
     }
     
